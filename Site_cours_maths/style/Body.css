@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*
+{
+	margin : 0;
+	padding : 0;
+}
+html
+{
+	height: 100%;
+}
+
+.Titre
+{
+	top : 50em;
+}
+
+body 
+{
+	text-align: center;
+	position: relative;
+	height: 100%;
+}
+
+#banner-area
+{
+	width: 100%;
+	top : 13%;
+	height: 500px;
+	background-image : url("Images/fond_maths.jpg");
+	background-size:cover;
+	position: fixed;
+	z-index: -1;
+}
+
+#content-area
+{
+	margin-top : 400px;
+	width: 100%;
+	min-height: 80%;
+	background:white;
+	font-family: Verdana;
+	line-height: 2em;
+	box-shadow: 0 -2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#bloc
+{
+	margin :auto;
+	padding: 1.5%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	text-align: left;
+	width: 90%;
+}
+
+/* Reponsive */
+
+@media screen and (max-width: 970px)
+{
+	#bloc
+	{
+		width: 90%;
+	}
+	#content-area
+	{
+		margin-top : 300px;
+	}
+}

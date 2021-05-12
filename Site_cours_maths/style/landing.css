@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Permanent+Marker&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: 'Domine', serif;
+}
+
+body{
+	/*background: #4B77BE;*/
+	overflow: hidden;
+}
+
+a{
+	color : black;
+}
+
+#wrapper{
+	position: static;
+	width: 100%;
+	height: 100%;
+}
+
+video{ 
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-65%);
+	background-size: cover;
+	transition: 1s opacity;
+	opacity: 0.9;
+}
+
+#poster{
+	display: none;
+}
+
+.stopfade { opacity: .5; }
+
+#vidpause { 
+	width: 150px;
+	padding: 4px;
+	border: none; 
+	font-size: 1.3rem;
+	background: rgba(255,255,255,0.23);
+	color: #fff;
+	border-radius: 2px; 
+	transition: .3s background;
+	position: absolute;
+	bottom : 7rem;
+	left : 7rem;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#header{
+	display: flex;
+	color : rgb(255,255,255,0.9);
+	font-size: 20px;
+	padding: 10px;
+}
+
+#nav{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+#nav #tel, #email{
+	padding : 0 20px 0 20px; 
+}
+
+#presentation_wrapper{
+	color : white;
+}
+
+#presentation_wrapper h2{
+	font-family: 'Permanent Marker', cursive;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 3rem;
+	margin : 10rem 0 0 9rem;
+}
+
+#presentation_wrapper p{
+	position: absolute;
+	width: 800px;
+	margin : 15rem 0 0 7rem;
+	font-size: 1.5rem;
+}
+
+#inscription_wrapper h2{
+	text-align: center;
+}
+
+#inscription_wrapper{
+	position: absolute;
+	background: white;
+	padding: 2rem;
+	width: 350px;
+	margin: 12rem 2.8rem;
+	right : 3%;
+	z-index: 2;
+	box-shadow: 20px 20px rgba(0,0,0,.15);
+	border : 2px solid #4B77BE;
+	transition: all .4s ease;
+}
+
+#inscription_wrapper:hover{
+	box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+#inscription_wrapper p{
+	margin-top: 5px;
+	text-align: center;
+}
+
+#inscription_wrapper form{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+#inscription_wrapper form *{
+	border : 0px solid #4B77BE;
+	border-radius : 2px;
+	font-size: 1rem;
+	margin: auto;
+	height: 40px;
+	border : 1px solid #4B77BE;
+}
+
+#inscription_wrapper div{
+	display: flex;
+	justify-content: space-between;
+	border : none;
+}
+
+#inscription_wrapper form #prenom,#statut{
+	width: 49%;
+	text-indent: 10px;
+}
+
+#inscription_wrapper form #statut{
+	height: 42px;
+	margin-left : 5px;
+}
+
+#inscription_wrapper form #mail{
+	width: 100%;
+	margin-top: 20px;
+	text-indent: 10px;
+}
+
+#inscription_wrapper form #submit{
+	margin : 30px auto 0;
+	width: 180px;
+	background: #4B77BE;
+	color : white;
+	transition: all .4s ease;
+	border-radius : 50px;
+}
+
+#inscription_wrapper form #submit:hover{
+	background: #1F4788;
+}
+
+svg{
+	position: absolute;
+	right : 0;
+	width: 100vw;
+	bottom:0;
+	z-index: 1;
+}
+
+.arrow i{
+	position : absolute;
+	font-size: 70px;
+	z-index: 5;
+	cursor: pointer;
+	left: 48%;
+}
+
+#down i{	
+	bottom : 1%;
+}
+
+.rect{
+	background: #4B77BE;
+	height: 300px;
+	margin-top : 90vh;
+	width: 100vw;
+}
+
+#suite{
+	background : #4B77BE;
+	margin-top: 100vh;
+	font-size: 20px;
+	height: 100vh;
+	z-index: 3;
+}
+
+#suite h3{
+	padding : 100px 0 0 0;
+	display: flex;
+	justify-content: center;
+	color : rgb(255,255,255,0.8);
+	font-size: 30px;
+}
+
+#suite #container{
+	margin-top : 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#suite #container img{
+	width: 50px;
+	filter: invert(100%);
+	margin-bottom : 10px;
+}
+
+#suite #container #exo, #cours, #chat{
+	width: 360px;
+	text-align: center;
+	color : rgb(255,255,255,0.95);
+}
+
+#suite #container h4{
+	font-size: 24px;
+}
+
+#suite #container p{
+	color : rgb(255,255,255,0.7);
+	margin-top : 20px;
+	font-size: 18px;
+}
+
+#suite #container #exo p{
+	margin-top: 44px;
+}
+
+#suite #container #chat p{
+	margin-top: 44px;
+}
+
+@media screen and (max-width: 1350px){
+
+	#presentation_wrapper h2{
+		font-size: 3rem;
+		margin : 10rem 0 0 4rem;
+	}
+
+	#presentation_wrapper p{
+		width: 700px;
+		margin : 15rem 0 0 3rem;
+		font-size: 1.5rem;
+	}
+
+	#inscription_wrapper{
+		padding: 2rem;
+		width: 350px;
+		margin: 15rem 2.4rem;
+	}
+
+	#down i{	
+		bottom : 0;
+	}
+}
+
+@media screen and (max-width: 1230px){
+
+	#nav{
+		display: none;
+	}
+
+	#presentation_wrapper h2{
+		margin : 8rem 0 0 1rem;
+	}
+
+	#presentation_wrapper p{
+		width: 580px;
+		margin : 13rem 0 0 3rem;
+	}
+
+	#inscription_wrapper{
+		padding: 2rem;
+		width: 350px;
+		margin: 17rem 2.4rem;
+	}
+}
+
+@media screen and (max-width: 1100px){
+
+	video{ 
+		width: 200%;
+		height: 200%;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-65%);
+	}
+
+	#presentation_wrapper h2{
+		margin : 4rem 0 0 2rem;
+		font-size: 2.9rem;
+	}
+
+	#presentation_wrapper p{
+		width: 550px;
+		margin : 9rem 0 0 2rem;
+		font-size: 1.3rem;
+	}
+
+	#inscription_wrapper{
+		width: 350px;
+		margin: 20rem 4.4rem;
+	}
+
+	svg{
+		width: 110vw;
+	}
+
+	.rect{
+		margin-top : 94vh;
+		width: 101vw;
+	}
+
+	#down i{	
+		bottom : -35vh;
+		left : 44%;
+	}
+}
+
+@media screen and (max-width: 900px){
+
+	#vidpause{
+		display: none;
+	}
+
+	#presentation_wrapper h2{
+		font-size: 2.7rem;
+		margin : 3rem 0 0 0.5rem;
+	}
+
+	#presentation_wrapper p{
+		width: 550px;
+		margin : 8rem 0 0 1rem;
+		font-size: 1.2rem;
+	}
+}

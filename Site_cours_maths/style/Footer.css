@@ -1,0 +1,147 @@
+footer
+{
+	background:#4B77BE;
+	color : white;
+	box-shadow: 0 -2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer h5
+{
+	padding-top: 10px;
+	font-size: 20px;
+	padding-bottom : 15px;
+}
+
+.foot_wrapper
+{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 10px 10px 10px;
+}
+
+.leftside
+{
+	max-width: 600px;
+}
+
+.leftside p
+{
+	margin-top: 20px;
+}
+
+.social 
+{
+	margin-top : 25px;
+}
+
+.social a 
+{
+	height: 30px;
+	width: 30px;
+	border-radius : 30px;
+	color : white;
+	font-size: 30px;
+	transition : all 0.4s ease;
+}
+
+.social a span 
+{
+	width: 60px;
+}
+
+.social #fb:hover 
+{
+	background: #3b5998;
+}
+
+.social #insta:hover 
+{
+	background: #bc2a8d;
+}
+
+.social #twitter:hover 
+{
+	background: #00aced;
+}
+
+.social #linkedin:hover
+{
+	background: #0077b5;
+}
+
+.social #didi:hover
+{
+	background: #7289da;
+}
+.midside
+{
+	display: flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items: center;
+	min-width: 230px;
+	padding : 30px;
+	margin-right: 50px;
+}
+
+.midside a 
+{
+	padding: 5px 0;
+	text-decoration: none;
+	color : #ECF0F1;
+}
+
+.midside a:hover
+{
+	text-decoration: underline;
+}
+
+.footbande
+{
+	background: gray;
+}
+
+@media screen and (max-width: 970px)
+{
+	.leftside
+	{
+		margin: auto;
+	}
+
+	.leftside p
+	{
+		margin-top: 5px;
+	}
+
+	.social 
+	{
+		margin-top : 15px;
+	}
+
+	.foot_wrapper
+	{
+		flex-direction: column;
+	}
+
+	.leftside
+	{
+		max-width: 800px;
+	}
+
+	.midside
+	{
+		order : 3;
+		flex-direction : row;
+		margin-bottom: -10px;
+	}
+
+	.midside a
+	{
+		padding : 0 10px;
+	}
+	
+	.rightside
+	{
+		margin:0 70px;
+	}
+}

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+#index{
+	position: absolute;
+	top: 0;
+	margin-top: -5000px;
+}
+
+h4 
+{
+	font-size: 50px;
+	margin-bottom: 100px;
+}
+
+.space 
+{
+	height: 80px;
+}
+
+.slider section a 
+{
+	text-decoration: none;
+	color : white;
+}
+
+.carousel_container
+{
+	width: 70%;
+	margin : 10px auto;
+}
+
+#carousel
+{
+	position: relative;
+	border : 1px solid black;
+	height: 500px;
+	overflow : hidden;
+	display: flex;
+	flex-direction : column;
+}
+
+#Carous0
+{
+	background-image : url("Images/TableStudents.jpg");
+	background-size: 1110px 600px;
+	background-repeat: no-repeat;
+	opacity : 0.9;
+}
+
+#Carous1
+{
+	background-image : url("Images/First_Secours.jpg");
+	background-size: 1110px 600px;
+	background-repeat: no-repeat;
+	opacity : 0.9;
+}
+
+#Carous2
+{
+	background-image : url("Images/Time.jpg");
+	background-size: 1110px 600px;
+	background-repeat: no-repeat;
+	opacity : 0.9;
+}
+
+#CarousT
+{
+	background-image : url("Images/Terminus.jpg");
+	background-size: 1110px 600px;
+	background-repeat: no-repeat;
+	opacity : 0.9;
+}
+
+
+.slider 
+{
+	height: 100%;
+	display: flex;
+	width: 400%;
+	transition : all 0.3s;
+	color : white;
+}
+
+.slider section 
+{
+	flex-basis : 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.slider section .slide_content
+{
+	height: 25%;
+	width: 100%;
+	background: grey;
+	font-style: italic;
+}
+
+.controls .arrow
+{
+	position : absolute;
+	top : 45%;
+	cursor : pointer;
+}
+
+.controls .arrow i
+{
+	font-size: 80px;
+}
+
+.controls .arrow i:hover
+{
+	background: grey;
+}
+
+.arrow.left
+{
+	left : 10px;
+}
+
+.arrow.right
+{
+	right : 10px;
+}
+
+.controls ul 
+{
+	position : absolute;
+	width: 100%;
+	list-style: none;
+	display: flex;
+	left: 50%;
+}
+
+.controls ul li
+{
+	width: 15px;
+	height: 15px;
+	border : 2px solid black;
+	border-radius : 50px;
+	margin : 20px;
+	transform : translate(-800%, -360%);
+	cursor : pointer;
+	background: #333;
+}
+
+.triangle{
+	margin: auto;
+	height: 0;
+	width: 0;
+	border-top : 80px solid red;
+	border-right : 46px solid transparent;
+	border-left : 46px solid transparent;
+}
+
+.white{
+	border-top : 80px solid white;
+}
+
+.grey{
+	border-top : 80px solid #D2D7D3;
+}
+
+#bloc{
+	width: 100%;
+	padding : 0;
+	margin-top: 200px;
+}
+
+
+#bloc h3{
+	text-align: center;
+	font-size: 60px;
+	font-family: 'Caveat Brush', cursive;
+}
+
+#bloc #Propos{
+	background: #D2D7D3;
+	width: 100%;
+	height: 100%;
+}
+
+#bloc #Propos .space{
+	height: 40px;
+}
+
+.IndexBloc
+{
+	display: flex;
+	width: 100%;
+	margin : 50px 0 50px 0;
+}
+
+.IndexBloc img 
+{
+	width: 50%;
+	padding : 15px;
+}
+
+.IndexBloc p 
+{
+	font-size: 35px;
+	font-weight: 600;
+	margin : auto;
+	text-align: center;
+	line-height: 50px;
+	font-style : italic;
+	font-weight: 5px;
+
+
+}
+
+#bloc #ContactUs{
+	background: white;
+	width: 100%;
+	height: 100%;
+}
+
+#bloc #ContactUs form
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+#bloc #ContactUs form *{
+	border : 1px solid #4B77BE;
+	border-radius : 3px;
+	font-size: 16px;
+}
+
+#bloc #ContactUs form div{
+	border : none;
+}
+
+#bloc #ContactUs form #prenom,#statut{
+	width: 298px;
+	height: 30px;
+}
+
+#bloc #ContactUs form #mail{
+	width: 600px;
+	height: 30px;
+	margin-top: 20px;
+}
+
+#bloc #ContactUs form #message{
+	margin-top: 20px;
+	width: 600px;
+	height: 200px;
+}
+
+#bloc #ContactUs form #submit{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 35px;
+	width: 150px;
+	background: #4B77BE;
+	color : white;
+	text-decoration:line-through;
+}
+
+#bloc #ContactUs form #submit:hover{
+	background: #1F4788;
+}
+
+.section 
+{
+	opacity: 1;
+	transition: opacity 2s ease;
+}
+
+.hidden 
+{
+	opacity: 0;
+}
+
+@media screen and (max-width: 970px)
+{
+	.IndexBloc p{
+		font-size: 24px;
+	}
+
+	#bloc #ContactUs form #prenom,#statut{
+		width: 198px;
+	}
+
+	#bloc #ContactUs form #mail{
+		width: 400px;
+	}
+
+	#bloc #ContactUs form #message{
+		width: 400px;
+	}
+
+	#bloc #ContactUs form #submit{
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 600px)
+{
+	.IndexBloc p{
+		font-size: 19px;
+	}
+}

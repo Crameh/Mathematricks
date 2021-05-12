@@ -1,0 +1,146 @@
+#bloc
+{
+	margin-top : 20px;
+}
+
+h1
+{
+	margin : 30px auto 60px;
+	font-size: 60px;
+	color : #757D75 ;
+}
+
+.circle
+{
+	height: 50px;
+	width: 50px;
+	background:#757D75;
+	border-radius : 50%;
+	position:absolute;
+	left : calc(50% - 20px);
+	margin-top: 100px;
+}
+
+.line
+{
+	height: 270px;
+	width: 10px;
+	background: #757D75;
+	position: absolute;
+	left: 50%;
+}
+
+.summ-wrapper
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.summ-mini-wrap
+{
+	margin : 10px 0 10px 0;
+	display: flex;
+}
+
+.summleft
+{
+	justify-content: flex-start;
+}
+
+.summright
+{
+	justify-content: flex-end;
+}
+
+.summ-mini-wrap .summ-elt
+{
+	color : white;
+	width: 40%;
+	height: 250px;
+	padding : 20px;
+	text-decoration: none;
+	border-radius : 10px;
+	background : #F47983;
+}
+
+.summ-elt h6
+{
+	font-size: 20px;
+	margin-bottom: 15px;
+	text-decoration: underline;
+}
+
+.summ-elt .block-mini-elt
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column; 
+	opacity : 0;
+	animation : opacity 0.3s ease;
+}
+
+.block-mini-elt .summ-mini-elt
+{
+	background: grey;	
+	text-decoration: none;
+	color : white;
+	display: none;
+	margin : 8px 0;
+}
+
+.block-mini-elt .n2
+{
+	margin : 20px 0;
+}
+
+.section 
+{
+	opacity: 1;
+	transition: opacity 2s ease;
+}
+
+.hidden 
+{
+	opacity: 0;
+}
+
+/* Coté hover */
+.summ-elt:hover .summ-mini-elt
+{
+	display: block;
+}
+
+.summ-elt:hover .block-mini-elt
+{
+	transition : 0.5s;
+	opacity : 1;
+}
+
+.summ-elt:hover p
+{
+	display: none;
+}
+
+
+@media screen and (max-width: 970px)
+{
+	.line
+	{
+		left : 8%;
+	}
+	.circle
+	{
+		left : calc(8% - 20px);
+	}
+	.summ-mini-wrap
+	{
+		justify-content: center;
+	}
+	.summ-mini-wrap .summ-elt
+	{
+		margin-left : 70px;
+		min-width: 350px;
+		width: 70%;
+	}
+}

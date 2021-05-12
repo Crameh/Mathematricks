@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1.0"> 
+	<link rel ="stylesheet" href= "style/landing.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Landing page</title>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<video id="bgvid" poster= "css/Images/Video_landing_image_bg.png" playsinline autoplay muted loop > <source src="css/Videos/Eleves_linear_compress.mp4" type="video/mp4"> </video>
+
+			<!--<video id="bgvid" playsinline autoplay muted loop > <source src="css/Videos/production_ID_4778723.mp4" type="video/mp4"> </video>-->
+
+
+				<button id="vidpause" onclick="pause()">Pause</button>
+
+				<div id = "header">
+					<div id="logo">LOGO</div>
+
+					<div id="nav">
+						<div id="tel"> &#9743; +33 1 26 89 78 87</div>
+						<div id="email"> &#9993; petitmailpro@gmail.com</div>
+					</div>
+				</div>
+
+				<div id="presentation_wrapper">
+					<h2> DES EXERCICES A L'INFINI</h2>
+
+					<p> Les technologies se développent, l'éducation se digitalise... "Nom du site" te propose de te mettre à jour ! Les algorithmes de notre plateforme te proposent des exercices de mathématiques qui changent sans cesse afin d'apprendre le plus efficaement possible. </p>
+
+				</div>
+
+				<div id="inscription_wrapper">
+					<h2>INSCRIS TOI MAINTENANT</h2>
+					<p> afin d'accéder à la plateforme. </p>
+					<form method="post" action="traitement.php">
+						<div>
+							<input type="text" name="prenom" id="prenom" placeholder="Prénom">
+							<select name="statut" id="statut">
+								<option value="student">Etudiant(e)</option>
+								<option value="parent">Parent d'étudiant(e)</option>
+								<option value="student">Autre</option>
+							</select>
+						</div>
+						<input type="email" name="mail" id="mail" placeholder="Email"/>
+						<button type ="submit" id = "submit"> Essaie gratuitement </button>
+					</form>
+				</div>
+
+				<a href="#suite"> <span class="arrow" id="down" onclick="screen_down()"> <i class = "material-icons"> expand_more </i> </span> </a>
+
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4B77BE" fill-opacity="1" d="M0,224L80,234.7C160,245,320,267,480,234.7C640,203,800,117,960,85.3C1120,53,1280,75,1360,85.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
+			</div>
+
+			<div class="rect"></div>
+
+			<div id="suite">
+
+				<a href="#wrapper"> <span class="arrow" id="up" onclick="screen_up()"> <i class = "material-icons"> expand_less </i> </span> </a>
+
+				<h3>"Nom du site", qu'est ce c'est ?</h3>
+
+				<div id="container"> 
+
+					<div id="exo"> 
+						<img src="css/Images/infinity_icon_177837.png" alt="Une image d'infini">
+						<h4>Une infinité d'exercices</h4> 
+						<p> Notre plateforme s'assure d'une génération aléatoire d'exercices afin d'encourager l'étudiant à comprendre le cours au lieu d'apprendre les corrections des exerices. </p>
+					</div>
+					<div id="cours"> 
+						<img src="css/Images/book_icon-icons.com_73655.png" alt="Une image d'un livre">
+						<h4>Des cours écrits par des étudiants</h4>
+						<p> En plus des exercices, "Nom du site" se charge de vous partager des cours entièrement rédigés par des étudiants qui sont conscients des difficultés des élèves. </p>
+					</div>
+					<div id="chat"> 
+						<img src="css/Images/message_105089.png" alt="Une image d'un message">
+						<h4>Un chat pour les utilisateurs</h4>
+						<p> Nous vous proposons aussi un service de chat afin que les différents étudiants puissent communiquer entre eux et s'entreaider à comprendre les différentes notions abordées. </p> 
+					</div>
+
+				</div>
+
+			</div>
+
+		</body>
+
+		<script type="text/javascript">
+			
+			const vid = document.getElementById("bgvid");
+			let pauseButton = document.getElementById("vidpause");
+			const suite = document.getElementById("suite");
+
+		/*function screen_down(){
+			window.scrollBy(-500, 3000);
+		}*/
+
+		/*function screen_up(){
+			window.scrollBy(-500, -3000);
+		}*/
+
+		function pause(){
+			vid.classList.toggle("stopfade");
+			if (vid.paused) {
+				vid.play();
+				pauseButton.innerHTML = "Pause";
+			} else {
+				vid.pause();
+				pauseButton.innerHTML = "Reprendre";
+			}
+		}
+
+	</script>
+
+	</html>

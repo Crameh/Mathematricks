@@ -1,0 +1,81 @@
+   <link rel="stylesheet" href="style/Header.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+   <header>
+
+    <nav>
+      <div class="headerwrapper">
+
+        <div class="logo"><a href="index.php#index">Mathematricks</a></div>
+        <!-- Des input reliés aux icones pour faire des actions -->
+        <input type="radio" name="slide" id="menu-btn">
+        <input type="radio" name="slide" id="cancel-btn">
+
+        <ul class="nav-links">
+          <!-- icone d'une biblio javascript -->
+          <label for ="cancel-btn" class = "btn cancel-btn"> &#9747; </label>
+
+          <li><a href="index.php#index">Accueil</a></li>
+
+          <li>
+            <!-- desktop item pour le mode pc et mobile item pour le mode mobile (évident quoi) et input qui va permettre d'appuyer sur le bouton en quelque sorte -->
+            <a id = "desktop-item" > Cours </a>
+            <input type ="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item"> Cours </label>
+            <div class="mega-box">
+              <div class="content">
+
+                <div class="row">
+                  <header><a href ="Seconde_Sommaire.php" class ="header-row-title">Seconde</a></header>
+                  <ul class="mega-links">
+                    <li> <a href="Seconde_Chap1.php"> Ensemble de nombres et calculs numériques </a> </li>
+                    <li><a href="Seconde_Chap2.php">Intervalles et inégalités</a></li>
+                    <li><a href="Seconde_Chap3.php">Identités remarquables et équations</a></li>
+                    <li><a href="Seconde_Chap4.php">Généralités sur les fonctions</a></li>
+                    <li><a href="Seconde_Chap5.php">Variations et extremum</a></a></li>
+                    <li><a href="Seconde_Chap6.php">Statistiques descriptives</a></li>
+                    <li><a href="Seconde_Chap7.php">Probabilités et échantillonnage</a></li>
+                    <li><a href="Seconde_Chap8.php">Repérage et géométrie dans le plan</a></li>
+                    <li><a href="Seconde_Chap9.php">Vecteurs du plan</a></li>
+                    <li><a href="Seconde_Chap10.php">Droites du plan et systèmes d'équations</a></li>
+                  </ul>
+                </div>
+
+                <!-- row barre juste pour un élément de déco -->
+                <div class="row row-barre">                  
+                  <header><a href ="Premiere_Sommaire.php" class ="header-row-title">Premiere</a></header>
+                  <ul class="mega-links">
+                    <li><a href="#">Dérivation</a></li>
+                    <li><a href="#">Variations et courbes représentatives</a></li>
+                    <li><a href="#">Fonction exponentielle</a></li>
+                    <li><a href="#">Suites numériques</a></li>
+                    <li><a href="#">Equations, fonctions polynômes du second degré</a></li>
+                    <li><a href="#">Variables aléatoires discètes</a></li>
+                    <li><a href="#">Probabilités conditionnelles et indépendance</a></li>
+                    <li><a href="#">Calcul vectoriel et produit scalaire</a></li>
+                    <li><a href="#">Trigonométrie</a></li>
+                  </ul>
+                </div>
+
+                <div class="row row-error">
+                  <header><a href ="Terminale_Sommaire.php" class ="header-row-title">Terminale</a></header>
+                  <ul class="mega-links">
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li> <a href="landing.html">A propos</a></li> 
+          <li> <a href="index.php#ContactUs">Nous contacter</a></li>         
+          <li><a href="Login.php">Connexion</a></li>
+        </ul>
+        <label for ="menu-btn" class = "btn menu-btn">
+          &#9776;
+        </label>
+
+      </div>
+    </nav>
+
+  </header>

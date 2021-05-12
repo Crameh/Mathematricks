@@ -1,0 +1,19 @@
+# HTID:3704611: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:3704611:
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteBase /Site_cours_maths/
+
+RewriteRule ^index$ /index.php
+RewriteRule ^login$ /Login.php
+RewriteRule ^mentions-legales$ /Mentions_Legales.php
+RewriteRule ^Seconde_Chap1$ /Seconde_Chap1.php
+RewriteRule ^Premiere_Sommaire$ /Premiere_Sommaire.php
+RewriteRule ^Seconde_Chap6$ /Seconde_Chap6.php
+RewriteRule ^Seconde_Sommaire$ /Seconde_Sommaire.php
+RewriteRule ^Terminale_Sommaire$ /Terminale_Sommaire.php
+
+RewriteRule ^index$ /index.php
+RewriteRule ^index$ /index.php

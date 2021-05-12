@@ -1,0 +1,43 @@
+#tchat
+{
+	margin-top : 6%;
+	background-color: #fff;
+	border : 3px blue solid;
+	width: 25%;
+	align-items: center;
+	border-radius: 1%;
+	margin-bottom: 6%;
+	display: flex;
+	justify-content: center;
+}
+@media screen and (min-width: 1000px)
+{
+	#logo_tchat
+	{
+		display: none;
+	}
+}
+@media screen and (max-width: 1000px)
+{
+	#tchat
+	{
+		display: none;
+	}
+	#logo_tchat
+	{
+		position: fixed;
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		background-color: #19B5FE;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 87%;
+		top : 75%;
+	}
+	#tchat2
+	{
+		display: none;
+	}
+}
