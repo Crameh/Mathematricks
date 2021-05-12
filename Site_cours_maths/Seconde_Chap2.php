@@ -22,7 +22,7 @@ include'html/Header.html';
 
            <h1> Intervalles et inégalités </h1>
 
-           <p>Pas encore dispo, sorry</p>
+           <p>Pas encore dispo, sorry bla bla bla</p>
 
        </article>
 
