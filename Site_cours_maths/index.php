@@ -30,7 +30,7 @@ include'html/Header.html';
                     <section id = "Carous0">
                         <a href ="Login.php"> <h4> Connexion </h4> </a>
                         <div class="slide_content">
-                            Lore ipsum dolor sit amet consectetur adipisicing, elit. Fugiat veniam doloremque porro quisquam quibusdam eveniet dolores. Reprehenderit blanditiis, ab dignissimos, assumenda nulla aut autem quae rem sunt facere! Commodi, sunt.
+                            Lor ipsum dolor sit amet consectetur adipisicing, elit. Fugiat veniam doloremque porro quisquam quibusdam eveniet dolores. Reprehenderit blanditiis, ab dignissimos, assumenda nulla aut autem quae rem sunt facere! Commodi, sunt.
                         </div>
                     </section>
                     <section id = "Carous2">
